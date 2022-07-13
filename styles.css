@@ -1,0 +1,132 @@
+:root {
+    --color-main: #fff;
+    --color-points: hsl(229, 25%, 31%);
+    --color-score: hsl(229, 64%, 46%);
+    --color-border: hsl(217, 16%, 45%);
+    --color-paper: hsl(230, 89%, 62%), hsl(230, 89%, 65%);
+    --color-rock: hsl(349, 71%, 52%), hsl(349, 70%, 56%);
+    --color-scissors: hsl(39, 89%, 49%), hsl(40, 84%, 53%);
+}
+
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    min-height: 100%;
+    min-width: 100%;
+    padding: 50px;
+}
+
+
+header {
+    border: solid 2px var(--color-border);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--color-main);
+}
+
+h1 span {
+    display: block;
+    font-size: 32px;
+    line-height: 0.9;
+}
+
+.score {
+    border-radius: 5px;
+    background-color: var(--color-main);
+    padding: 10px 25px;
+    font-size: 20px;
+
+}
+
+.score span {
+    color: var(--color-score);
+}
+
+.points {
+    display: block;
+    text-align: center;
+    color: var(--color-points);
+    font-size: 50px;
+    line-height: 1.0;
+}
+
+
+
+main {
+    margin:  auto;
+    max-width: 800px;
+    padding: 50px;
+}
+
+.options {
+    aspect-ratio: 313 / 278;
+    background-image: url("./images/bg-triangle.svg");
+    background-size: cover;
+    margin: 50px auto;
+    width: 50%;
+    position: relative;
+}
+
+.options .button {
+    position: absolute;
+    width: 50%;
+}
+
+.button {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button img {
+    width: 50%;
+}
+
+.button__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-main);
+    border-radius: 50%;
+    height: 82%;
+    width: 82%;
+}
+
+.button--paper {
+    left:0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(var(--color-paper));
+}
+
+.button--rock {
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+    background: linear-gradient(var(--color-rock));
+}
+
+.button--scissors {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: linear-gradient(var(--color-scissors));
+}
