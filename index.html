@@ -36,31 +36,53 @@
 
   </header>
 
+
   <main>
 
     <section class="options">
       
-      <button class="button button--paper">
+      <button class="button button--paper" data-pick="paper">
         <div class="button__image-container">
           <img src="./images/icon-paper.svg" alt="Paper - Papier">
         </div>
       </button>
 
-      <button class="button button--rock">
+      <button class="button button--rock" data-pick="rock">
         <div class="button__image-container">
           <img src="./images/icon-rock.svg" alt="Rock - Kamień">
         </div>
       </button>
 
-      <button class="button button--scissors">
+      <button class="button button--scissors" data-pick="scissors">
         <div class="button__image-container">
           <img src="./images/icon-scissors.svg" alt="Scissors - Nożyce">
         </div>
       </button>
 
-
     </section>
 
+
+    <section class="battle">
+
+      <div class="pick-up">
+        <span class="battle__title">YOU PICK</span>
+        <div class="button button--paper">
+          <div class="button__image-container">
+            <img src="./images/icon-paper.svg" alt="Paper - Papier">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="pick-up">
+        <span class="battle__title">THE HOUSE PICKED</span>
+          <div class="pick-up_placeholder"></div>
+
+      </div>
+
+
+
+    </section>
 
 
 
@@ -73,6 +95,7 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 
+    <script src="app.js"></script>
 </body>
 
 </html>

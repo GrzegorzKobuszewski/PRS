@@ -29,7 +29,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -68,7 +68,7 @@ h1 span {
 
 main {
     margin:  auto;
-    max-width: 800px;
+    max-width: 600px;
     padding: 50px;
 }
 
@@ -82,6 +82,7 @@ main {
 }
 
 .options .button {
+    cursor: pointer;
     position: absolute;
     width: 50%;
 }
@@ -93,7 +94,6 @@ main {
     justify-content: center;
     border: none;
     border-radius: 50%;
-    cursor: pointer;
 }
 
 .button img {
@@ -105,28 +105,72 @@ main {
     align-items: center;
     justify-content: center;
     background-color: var(--color-main);
+    /* box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.2); */
     border-radius: 50%;
     height: 82%;
     width: 82%;
 }
 
-.button--paper {
+
+.options .button--paper {
     left:0;
     top: 0;
     transform: translate(-50%, -50%);
+}
+
+.options .button--rock {
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+}
+
+.options .button--scissors {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+
+.button--paper {
     background: linear-gradient(var(--color-paper));
 }
 
 .button--rock {
-    right: 0;
-    top: 0;
-    transform: translate(50%, -50%);
     background: linear-gradient(var(--color-rock));
 }
 
 .button--scissors {
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
     background: linear-gradient(var(--color-scissors));
+}
+
+.battle {
+    color: var(--color-main);
+    display: flex;
+}
+
+.battle .button {
+    width: 70%;
+}
+
+.pick-up {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+
+}
+
+.battle__title {
+    font-size: 24px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.pick-up_placeholder {
+    aspect-ratio: 1 / 1;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    width: 50%;
 }
