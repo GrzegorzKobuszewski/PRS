@@ -62,20 +62,23 @@
     </section>
 
 
-    <section class="battle">
+    <section class="battle hidden">
 
       <div class="pick-up">
-        <span class="battle__title">YOU PICK</span>
-        <div class="button button--paper">
-          <div class="button__image-container">
-            <img src="./images/icon-paper.svg" alt="Paper - Papier">
+        <span class="pick-up__title">YOU PICK</span>
+        <div class="pick__container pick__container--player">
+          <div class="button button--paper">
+            <div class="button__image-container">
+              <img src="./images/icon-paper.svg" alt="Paper - Papier">
+            </div>
           </div>
         </div>
       </div>
 
 
       <div class="pick-up">
-        <span class="battle__title">THE HOUSE PICKED</span>
+        <span class="pick-up__title">THE HOUSE PICKED</span>
+        <div class="pick__container pick__container--ai"></div>
           <div class="pick-up_placeholder"></div>
 
       </div>
@@ -94,7 +97,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-
     <script src="app.js"></script>
 </body>
 
